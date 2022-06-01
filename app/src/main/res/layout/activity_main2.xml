@@ -19,7 +19,7 @@
 
   <TextView
       android:id="@+id/textView"
-      android:layout_width="274dp"
+      android:layout_width="230dp"
       android:layout_height="265dp"
       android:text="Приложение Nike Члены клуба Nike получают доступ к лучшим продуктам, источникам вдохновения и историям из мира спорта."
       android:textColor="@color/white"

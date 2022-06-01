@@ -6,10 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity4">
 
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="10000dp"
-        tools:ignore="MissingConstraints">
+
 
         <Button
             android:id="@+id/button4"
@@ -41,7 +38,29 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@mipmap/img" />
 
+    <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@mipmap/image1"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="529dp" />
+
         <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@mipmap/image2"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="701dp" />
+
+    <ImageView
             android:id="@+id/imageView6"
             android:layout_width="322dp"
             android:layout_height="182dp"
@@ -82,5 +101,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
-    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
