@@ -1,30 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/bg"
     tools:context=".MainActivity2">
-
-  <ImageView
-      android:id="@+id/imageView2"
-      android:layout_width="412dp"
-      android:layout_height="732dp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      tools:ignore="MissingConstraints"
-      tools:srcCompat="@mipmap/bg" />
 
   <ImageView
       android:id="@+id/imageView3"
       android:layout_width="412dp"
       android:layout_height="732dp"
+      android:background="@mipmap/gr"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:srcCompat="@mipmap/gr"
       tools:ignore="MissingConstraints" />
 
   <TextView
@@ -34,17 +24,23 @@
       android:text="Приложение Nike Члены клуба Nike получают доступ к лучшим продуктам, источникам вдохновения и историям из мира спорта."
       android:textColor="@color/white"
       android:textSize="24sp"
-      tools:layout_editor_absoluteX="16dp"
-      tools:layout_editor_absoluteY="336dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.116"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView4"
+      app:layout_constraintVertical_bias="0.0"
       tools:ignore="MissingConstraints" />
 
   <ImageView
       android:id="@+id/imageView4"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="180dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
       app:srcCompat="@mipmap/ic_launcher_foreground"
-      tools:layout_editor_absoluteX="16dp"
-      tools:layout_editor_absoluteY="228dp"
       tools:ignore="MissingConstraints" />
 
   <Button
@@ -52,24 +48,26 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginStart="48dp"
+      android:layout_marginBottom="60dp"
       android:backgroundTint="@color/white"
       android:insetTop="0dp"
       android:insetBottom="0dp"
-      android:text="Давай с нами"
       android:onClick="login"
+      android:text="Давай с нами"
       android:textAllCaps="false"
       android:textColor="@color/black"
       android:textSize="12sp"
       app:cornerRadius="50dp"
+      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      tools:layout_editor_absoluteY="622dp"
       tools:ignore="MissingConstraints" />
 
   <Button
       android:id="@+id/button2"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginEnd="48dp"
+      android:layout_marginEnd="52dp"
+      android:layout_marginBottom="60dp"
       android:backgroundTint="@color/material_on_primary_disabled"
       android:insetTop="0dp"
       android:insetBottom="0dp"
@@ -78,8 +76,8 @@
       android:textColor="@color/white"
       android:textSize="12sp"
       app:cornerRadius="50dp"
-      app:layout_constraintEnd_toEndOf="parent"
 
-      tools:ignore="MissingConstraints"
-      tools:layout_editor_absoluteY="622dp" />
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
