@@ -1,5 +1,6 @@
 package com.example.a231adaniil
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -16,10 +17,11 @@ class MainActivity3 : AppCompatActivity() {
         password = findViewById(R.id.password)
     }
 
-    fun signin(view: View) {
+    fun main(view: View) {
         if (email.text.toString().isNotEmpty() && password.text.toString().isNotEmpty())
         {
-
+            val intent = Intent(this,MainActivity4::class.java)
+            startActivity(intent)
         }
         else
         {
