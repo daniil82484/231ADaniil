@@ -27,6 +27,11 @@
                 android:layout_marginTop="16dp"
                 app:srcCompat="@mipmap/img" />
 
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="match_parent"
@@ -63,12 +68,15 @@
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="135dp"
+                android:layout_marginStart="140dp"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="@color/black"
+                android:gravity="center"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
-                android:text="Давай с нами"
+                android:paddingLeft="36dp"
+                android:paddingRight="36dp"
+                android:text="Купить"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="12sp"
@@ -80,17 +88,19 @@
                 android:id="@+id/imageView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="36dp"
                 app:srcCompat="@mipmap/image1"
                 tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageView8"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_height="450dp"
+                android:layout_marginTop="36dp"
+                android:baselineAligned="false"
                 app:srcCompat="@mipmap/image2"
                 tools:ignore="MissingConstraints" />
+
         </LinearLayout>
     </ScrollView>
 
